@@ -35,7 +35,8 @@ Projeto **100% estático**, sem frameworks, bundlers ou dependências de build, 
 - [ ] Briefing do site aprovado
 - [ ] Logotipo em boa resolução, cores e fontes da marca
 - [ ] Fotos da Dra. Nayane, do consultório e do espaço infantil
-- [ ] Endereço completo, horários, WhatsApp e Instagram
+- [ ] Endereço completo, horários, WhatsApp e Instagram (os cadastros antigos na internet trazem endereços diferentes; confirmar o atual)
+- [ ] Perfil do Google e diretórios atualizados com o endereço e os convênios atuais, junto com o lançamento
 - [ ] Convênios ativos e autorização para divulgar nomes e logos
 - [ ] Confirmação das especialidades registradas no CRO-SE
 - [ ] Conferência das regras de publicidade do CFO e do CRO-SE (depoimentos, avaliações, imagens de pacientes)
