@@ -39,7 +39,7 @@ Escreva o briefing com estas seções. Cada afirmação diz de onde veio (ex.: "
 
 ## 3. Entregar
 
-1. Salve o briefing como documento no Google Drive, na mesma pasta dos quatro documentos, com o título **"Briefing do site — Dra. Nayane Moreno"** e a data. Nunca no repositório: ele é público.
+1. Salve o briefing como documento no Google Drive, na pasta interna **CLIENTES › @Dra. Nayane Moreno** (nunca na pasta "Site", que a cliente acessa), com o título **"Briefing do site — Dra. Nayane Moreno"** e a data. Nunca no repositório: ele é público.
 2. Se não conseguir gravar no Drive, entregue o texto completo na conversa e avise.
 3. Responda ao Felipe com: o resumo, as decisões em aberto e as pendências que travam, já escritas como perguntas prontas para mandar à cliente.
 

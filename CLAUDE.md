@@ -20,7 +20,7 @@ Tudo o que não está aqui vem dos documentos da cliente (abaixo). Não complete
 
 ## Fontes da verdade
 
-Quatro documentos no **Google Drive**, preenchidos pela equipe de marketing e completados pela Dra. Nayane: **Profissional**, **Persona**, **Mercado** e **Concorrentes** (busque pelos títulos com "Nayane" no conteúdo, usando o conector do Google Drive). Se o conector não estiver disponível, peça ao Felipe para exportar os documentos e colar aqui.
+Quatro documentos no **Google Drive**, na pasta "Site" compartilhada com a cliente, preenchidos pela equipe de marketing e completados pela Dra. Nayane: **Profissional**, **Persona**, **Mercado** e **Concorrentes**. Nessa pasta só se lê; o que produzimos vai para a pasta interna (regra 1). Busque pelos títulos com "Nayane" no conteúdo, usando o conector do Google Drive. Se o conector não estiver disponível, peça ao Felipe para exportar os documentos e colar aqui.
 
 Peso de cada informação, nesta ordem:
 
@@ -38,7 +38,7 @@ Quando dois documentos se contradizem, aponte a contradição e pergunte; não e
 
 ### 1. Este repositório é público
 
-Nada interno entra aqui: faturamento, ticket, preços e planos de tratamento, CAC, orçamento de mídia, números de pacientes, conversas, dados de pacientes, análise nominal de concorrentes e links dos documentos do Drive. O que for estratégico (briefing, análise de concorrentes) fica no Drive, na mesma pasta dos quatro documentos. A pasta `interno/` está no `.gitignore` para rascunhos locais, mas lembre que a sessão é temporária: o que importa precisa ir para o Drive.
+Nada interno entra aqui: faturamento, ticket, preços e planos de tratamento, CAC, orçamento de mídia, números de pacientes, conversas, dados de pacientes, análise nominal de concorrentes e links dos documentos do Drive. O que for estratégico (briefing, análise de concorrentes, roteiro) fica no Drive, na pasta interna **CLIENTES › @Dra. Nayane Moreno**, que tem o acesso herdado desligado: só o Felipe e a agência entram. **Nunca grave nada na pasta "Site"**, onde estão os quatro documentos: ela é compartilhada com a cliente. A pasta `interno/` está no `.gitignore` para rascunhos locais, mas lembre que a sessão é temporária: o que importa precisa ir para o Drive.
 
 ### 2. Publicidade odontológica
 

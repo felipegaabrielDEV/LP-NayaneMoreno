@@ -26,7 +26,7 @@ Aprofunde o que o documento marca como "a auditar":
 
 Para cada concorrente: promessa principal, público, provas, chamada para ação, presença de convênios, o que faz bem, onde deixa espaço. No fim, uma leitura de **espaços vazios** (o documento já aponta alguns como hipótese: convênio na página inicial, público adulto, linguagem de sinais que os pais reconhecem, cidade no título).
 
-Isso é interno: grave no Google Drive, na pasta dos documentos, como **"Concorrentes — pesquisa a fundo"**. Nunca no repositório, nunca no site.
+Isso é interno: grave no Google Drive, na pasta interna **CLIENTES › @Dra. Nayane Moreno** (nunca na pasta "Site", que a cliente acessa), como **"Concorrentes — pesquisa a fundo"**. Nunca no repositório, nunca no site.
 
 ## 2. Sites-espelho
 
