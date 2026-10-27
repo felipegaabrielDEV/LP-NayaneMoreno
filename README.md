@@ -37,7 +37,7 @@ Página única, na ordem do roteiro aprovado internamente:
 | 05 | Convênios | Faixa curta; âncora `#convenios` |
 | 06 | Como funciona a avaliação | 4 etapas, o acompanhamento e a citação dela |
 | 07 | Quem é a Dra. Nayane | Trajetória e credenciais com instituição e ano |
-| 08 | Consultório e localização | Galeria com as fotos do consultório e espaço para o mapa |
+| 08 | Consultório e localização | Galeria com as fotos do consultório (com botão de pausa) ao lado do endereço, dos horários e do "como chegar" |
 | 09 | Avaliações do Google | Bloco **reservado**: só entra no ar com autorização, norma conferida e perfil conferido |
 | 10 | Perguntas frequentes | 10 perguntas em acordeão |
 | 11 | Chamada final | Convite curto |
@@ -54,6 +54,7 @@ Sem logotipo nem manual de marca, a paleta saiu das fotos do consultório: verde
 - **Cores:** verde-profundo `#0b3f3c` (títulos e seções escuras), menta `#e3f4f1`, creme `#fbf8f3` e coral `#c4452d` só no botão de ação (contraste 4,96 com texto branco).
 - **Fontes:** Fraunces (títulos) e Nunito Sans (texto), pelo Google Fonts.
 - **Ícones:** SVG em traço, no sprite do início do `index.html`.
+- **Composição:** foto em arco no topo, com os temas da avaliação (respiração, língua, mastigação, sono e postura) em volta; cartões com cantos arredondados e sombra suave; seções alternando creme, menta e verde-profundo. A foto entra no lugar do conteúdo do `.arco`, e o CSS já recorta no formato.
 
 ---
 
@@ -81,7 +82,7 @@ Projeto **100% estático**, sem frameworks, bundlers ou dependências de build, 
 ## 📱 Responsividade, acessibilidade e performance
 
 - Testado em 320, 375, 390, 430, 768, 1024, 1366 e 1920 px, sem rolagem horizontal.
-- Foco visível em tudo que é clicável, contraste AA, áreas de toque de 44 px ou mais, menu móvel que fecha com `Esc` e com toque fora, perguntas frequentes com `aria-expanded`, galeria que não troca sozinha com `prefers-reduced-motion`.
+- Foco visível em tudo que é clicável, link para pular o menu, contraste AA, áreas de toque de 44 px ou mais, menu móvel que leva o foco para dentro e fecha com `Esc` e com toque fora, perguntas frequentes com `aria-expanded`, galeria com botão de pausa e que não troca sozinha com `prefers-reduced-motion`.
 - Fotos em WebP com largura e altura declaradas e `loading="lazy"`; sem bibliotecas externas de JavaScript.
 
 ---

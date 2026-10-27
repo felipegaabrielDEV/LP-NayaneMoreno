@@ -21,8 +21,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=20261027-01">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=20261027-02">
 </head>
 <body>
 
@@ -52,9 +52,14 @@
         <symbol id="i-esq" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
         <symbol id="i-dir" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
         <symbol id="i-mais" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+        <symbol id="i-mapa" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.700" stroke-linecap="round" stroke-linejoin="round"><path d="M3.500 6.500 9 4l6 2.500L20.500 4v13.500L15 20l-6-2.500-5.500 2.500z"/><path d="M9 4v13.500M15 6.500V20"/></g></symbol>
+        <symbol id="i-pausa" viewBox="0 0 24 24"><path d="M9 6v12M15 6v12" fill="none" stroke="currentColor" stroke-width="2.200" stroke-linecap="round"/></symbol>
+        <symbol id="i-tocar" viewBox="0 0 24 24"><path d="M8 5.500v13l10.500-6.500z" fill="currentColor"/></symbol>
         <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.500l4.500 4.500L19 7.500" fill="none" stroke="currentColor" stroke-width="2.200" stroke-linecap="round" stroke-linejoin="round"/></symbol>
     </defs>
 </svg>
+
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
 
 <!-- Aviso da prévia: some quando o site for lançado. Os marcadores amarelos [PENDENTE: …] mostram o que falta confirmar. -->
 <div class="aviso-previa" role="note">
@@ -65,8 +70,11 @@
 <header class="cabecalho" id="topo">
     <div class="cabecalho__barra">
         <a class="marca" href="#inicio" aria-label="Dra. Nayane Moreno, Cirurgiã-Dentista, CRO-SE 2301. Ir para o início">
-            <span class="marca__nome">Dra. Nayane Moreno</span>
-            <span class="marca__reg">Cirurgiã-Dentista · CRO-SE 2301</span>
+            <span class="marca__selo" aria-hidden="true"><svg class="icone"><use href="#i-dente"/></svg></span>
+            <span class="marca__texto">
+                <span class="marca__nome">Dra. Nayane Moreno</span>
+                <span class="marca__reg">Cirurgiã-Dentista · CRO-SE 2301</span>
+            </span>
         </a>
 
         <nav class="menu" id="menu" aria-label="Principal">
@@ -102,39 +110,48 @@
     <section class="topo" id="inicio" aria-labelledby="titulo-topo">
         <div class="contem topo__grade">
             <div class="topo__texto">
-                <p class="rotulo">Dentista em Aracaju · crianças de 5 a 10 anos</p>
+                <p class="selo"><span class="selo__ponto" aria-hidden="true"></span>Dentista em Aracaju · crianças de 5 a 10 anos</p>
                 <h1 id="titulo-topo">Seu filho dorme de boca aberta? <em>Vale avaliar.</em></h1>
                 <p class="topo__sub">A respiração e a posição da língua fazem parte do desenvolvimento dos dentes e do rosto. A Dra. Nayane Moreno avalia, explica o que viu e orienta se há indicação de tratamento.</p>
-                <a class="btn btn--grande" href="https://wa.me/?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Nayane%20Moreno." data-wa data-wa-origin="hero">
-                    <svg class="icone" aria-hidden="true"><use href="#i-whatsapp"/></svg>
-                    Agendar avaliação pelo WhatsApp
-                </a>
-                <!-- Na prévia 2 entra o formulário curto antes do WhatsApp; aí estas notas passam a citar as perguntas. -->
-                <p class="nota-botao">A conversa abre no WhatsApp com a mensagem pronta.</p>
+                <div class="topo__acao">
+                    <a class="btn btn--grande" href="https://wa.me/?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Nayane%20Moreno." data-wa data-wa-origin="hero">
+                        <svg class="icone" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+                        Agendar avaliação pelo WhatsApp
+                    </a>
+                    <!-- Na prévia 2 entra o formulário curto antes do WhatsApp; aí estas notas passam a citar as perguntas. -->
+                    <p class="nota-botao">A conversa abre no WhatsApp com a mensagem pronta.</p>
+                </div>
                 <p class="saida"><a href="#para-quem">Adolescente, adulto ou plano odontológico? Veja as opções <svg class="icone icone--pq" aria-hidden="true"><use href="#i-seta"/></svg></a></p>
+                <ul class="numeros">
+                    <li><strong>15 anos</strong> <span>de Odontologia</span> <mark class="pend">[PENDENTE: comprovante]</mark></li>
+                    <li><strong>Desde 2019</strong> <span>na Odontologia Miofuncional</span> <mark class="pend">[PENDENTE: comprovante]</mark></li>
+                </ul>
             </div>
 
-            <div class="topo__foto">
-                <!-- [PENDENTE: foto profissional vertical da Dra. Nayane, 4:5, mínimo 1200 × 1500 px] -->
-                <div class="topo__retrato">
-                <div class="retrato" role="img" aria-label="Espaço reservado para a foto profissional da Dra. Nayane Moreno">
-                    <svg class="retrato__dente" aria-hidden="true"><use href="#i-dente"/></svg>
+            <div class="topo__visual">
+                <!-- [PENDENTE: foto profissional vertical da Dra. Nayane, 4:5, mínimo 1200 × 1500 px].
+                     Quando chegar, troque o conteúdo do .arco por um <img> (o CSS já recorta no formato de arco). -->
+                <div class="arco" role="img" aria-label="Espaço reservado para a foto profissional da Dra. Nayane Moreno">
+                    <svg class="arco__dente" aria-hidden="true"><use href="#i-dente"/></svg>
                     <mark class="pend">[PENDENTE: foto profissional vertical]</mark>
                 </div>
                 <div class="etiqueta">
                     <strong>Dra. Nayane Moreno</strong>
                     <span>Cirurgiã-Dentista · CRO-SE 2301</span>
                 </div>
-                </div>
-                <ul class="trajetoria">
-                    <li><strong>15 anos</strong> de Odontologia <mark class="pend">[PENDENTE: comprovante]</mark></li>
-                    <li><strong>Desde 2019</strong> na Odontologia Miofuncional <mark class="pend">[PENDENTE: comprovante]</mark></li>
+                <!-- O que a avaliação olha, em volta da foto -->
+                <ul class="orbita" aria-label="O que a avaliação olha">
+                    <li><svg class="icone" aria-hidden="true"><use href="#i-respira"/></svg>Respiração</li>
+                    <li><svg class="icone" aria-hidden="true"><use href="#i-lingua"/></svg>Língua</li>
+                    <li><svg class="icone" aria-hidden="true"><use href="#i-mastigar"/></svg>Mastigação</li>
+                    <li><svg class="icone" aria-hidden="true"><use href="#i-sono"/></svg>Sono</li>
+                    <li><svg class="icone" aria-hidden="true"><use href="#i-postura"/></svg>Postura</li>
                 </ul>
             </div>
         </div>
 
-        <div class="faixa" aria-label="Como é o atendimento">
-            <ul class="contem faixa__lista">
+        <div class="contem faixa">
+            <ul class="faixa__lista">
                 <li>
                     <svg class="icone icone--faixa" aria-hidden="true"><use href="#i-respira"/></svg>
                     <span><strong>Olha além dos dentes</strong> Respiração, língua, mastigação, sono e postura</span>
@@ -218,6 +235,8 @@
     <!-- 03 · PROTOCOLO, COM O PAINEL "QUEM CUIDA DO QUÊ" -->
     <section class="secao secao--menta" id="protocolo" aria-labelledby="titulo-protocolo">
         <div class="contem">
+            <div class="protocolo">
+            <div class="protocolo__intro">
             <header class="secao__cab">
                 <p class="rotulo">Um protocolo que começa pela causa</p>
                 <h2 id="titulo-protocolo">O que a avaliação olha, além dos dentes</h2>
@@ -229,7 +248,9 @@
                 <p class="ponte">Quando a criança respira pela boca, a língua tende a ficar mais baixa. Com o tempo, isso pode influenciar o crescimento da arcada e o espaço para os dentes. <mark class="pend">[PENDENTE: validação clínica da Dra. Nayane]</mark></p>
                 <p>A avaliação inclui uma conversa sobre a história de quem vai ser avaliado (anamnese). Na consulta, ela explica o que observou e como a respiração se relaciona com os dentes e o desenvolvimento.</p>
             </div>
+            </div>
 
+            <div class="protocolo__lista">
             <ul class="testes">
                 <li class="teste"><svg class="icone icone--teste" aria-hidden="true"><use href="#i-respira"/></svg><h3>Respiração</h3><p>Teste respiratório</p></li>
                 <li class="teste"><svg class="icone icone--teste" aria-hidden="true"><use href="#i-lingua"/></svg><h3>Língua</h3><p>Teste de língua</p></li>
@@ -240,6 +261,8 @@
             </ul>
             <p class="apoio">Questionários e vídeos para análise também podem fazer parte.</p>
             <p class="pend-linha"><mark class="pend">[PENDENTE: o protocolo em palavras simples, se tem nome, a ordem e a duração das etapas]</mark></p>
+            </div>
+            </div>
 
             <div class="painel">
                 <h3>Quando o cuidado vai além da Odontologia</h3>
@@ -318,7 +341,9 @@
 
     <!-- 05 · CONVÊNIOS -->
     <section class="convenios" id="convenios" aria-labelledby="titulo-convenios">
-        <div class="contem convenios__grade">
+        <div class="contem">
+        <div class="convenios__grade">
+            <span class="convenios__icone" aria-hidden="true"><svg class="icone"><use href="#i-plano"/></svg></span>
             <div>
                 <p class="rotulo">Convênios</p>
                 <h2 id="titulo-convenios">Tem plano odontológico?</h2>
@@ -332,6 +357,7 @@
                     Confirmar meu plano pelo WhatsApp
                 </a>
             </div>
+        </div>
         </div>
     </section>
 
@@ -397,8 +423,8 @@
         <div class="contem sobre">
             <div class="sobre__foto">
                 <!-- [PENDENTE: retrato vertical 4:5, diferente do retrato do topo, e vídeo curto de até 90 s] -->
-                <div class="retrato retrato--sobre" role="img" aria-label="Espaço reservado para o segundo retrato da Dra. Nayane Moreno">
-                    <svg class="retrato__dente" aria-hidden="true"><use href="#i-dente"/></svg>
+                <div class="arco arco--sobre" role="img" aria-label="Espaço reservado para o segundo retrato da Dra. Nayane Moreno">
+                    <svg class="arco__dente" aria-hidden="true"><use href="#i-dente"/></svg>
                     <mark class="pend">[PENDENTE: retrato e vídeo curto]</mark>
                 </div>
             </div>
@@ -442,56 +468,55 @@
                 <p class="secao__sub"><mark class="pend">[PENDENTE: confirmar se o espaço infantil e estas fotos são do consultório atual]</mark> A criança é recebida de forma lúdica. O espaço tem escalada, basquete, trave de futebol, lousa interativa, dardos, amarelinha e boliche.</p>
             </header>
 
-            <!-- Galeria: uma foto por vez. Troca sozinha a cada 5 s, pausa no hover e no foco e para de vez ao toque.
-                 Todos os ambientes vazios: nenhuma foto com criança ou paciente. -->
+            <div class="consultorio">
+            <!-- Galeria: uma foto por vez. Troca sozinha a cada 5 s, pausa no hover, no foco e no botão de pausa, e para de vez ao toque.
+                 Todos os ambientes vazios: nenhuma foto com criança ou paciente. Nomes na lousa e cartazes foram desfocados. -->
             <div class="galeria" id="galeria" role="region" aria-roledescription="carrossel" aria-label="Fotos do consultório">
                 <ul class="galeria__faixa">
-                    <li class="galeria__slide" role="group" aria-roledescription="slide" aria-label="Foto 1 de 6">
+                    <li class="galeria__slide" role="group" aria-roledescription="slide" aria-label="Foto 1 de 5">
                         <img src="assets/consultorio/consultorio-01.webp" width="960" height="1280" alt="Sala de atendimento com cadeira odontológica, janela de blocos de vidro para um pequeno jardim interno e a lousa preta na parede" loading="lazy">
                     </li>
-                    <li class="galeria__slide" role="group" aria-roledescription="slide" aria-label="Foto 2 de 6">
+                    <li class="galeria__slide" role="group" aria-roledescription="slide" aria-label="Foto 2 de 5">
                         <img src="assets/consultorio/consultorio-02.webp" width="1280" height="960" alt="Cadeira odontológica de frente para a janela, com a lousa à esquerda e um painel de Minions na porta ao fundo" loading="lazy">
                     </li>
-                    <li class="galeria__slide" role="group" aria-roledescription="slide" aria-label="Foto 3 de 6">
+                    <li class="galeria__slide" role="group" aria-roledescription="slide" aria-label="Foto 3 de 5">
                         <img src="assets/consultorio/consultorio-03.webp" width="960" height="1280" alt="Sala com parede de escalada colorida, poltrona de espera e a cadeira odontológica em primeiro plano" loading="lazy">
                     </li>
-                    <li class="galeria__slide" role="group" aria-roledescription="slide" aria-label="Foto 4 de 6">
+                    <li class="galeria__slide" role="group" aria-roledescription="slide" aria-label="Foto 4 de 5">
                         <img src="assets/consultorio/consultorio-04.webp" width="1280" height="960" alt="Cadeira odontológica, bancada azul e a lousa com desenhos feitos por crianças" loading="lazy">
                     </li>
-                    <li class="galeria__slide" role="group" aria-roledescription="slide" aria-label="Foto 5 de 6">
+                    <li class="galeria__slide" role="group" aria-roledescription="slide" aria-label="Foto 5 de 5">
                         <img src="assets/consultorio/consultorio-05.webp" width="960" height="1280" alt="Visão da sala com mesa de vidro, bancada azul, bola de futebol pendurada no teto e a cadeira odontológica ao fundo" loading="lazy">
-                    </li>
-                    <li class="galeria__slide galeria__slide--mapa" role="group" aria-roledescription="slide" aria-label="Foto 6 de 6">
-                        <div class="mapa">
-                            <svg class="icone icone--mapa" aria-hidden="true"><use href="#i-pin"/></svg>
-                            <p><mark class="pend">[PENDENTE: endereço completo, bairro e CEP]</mark></p>
-                            <p class="mapa__nota">O mapa interativo só carrega depois que você permitir os cookies. Até lá, use o link abaixo.</p>
-                            <a class="btn btn--claro" href="#consultorio">Como chegar (abrir no Google Maps)</a>
-                        </div>
                     </li>
                 </ul>
                 <button class="galeria__seta galeria__seta--esq" type="button" aria-label="Foto anterior"><svg class="icone" aria-hidden="true"><use href="#i-esq"/></svg></button>
                 <button class="galeria__seta galeria__seta--dir" type="button" aria-label="Próxima foto"><svg class="icone" aria-hidden="true"><use href="#i-dir"/></svg></button>
+                <button class="galeria__pausa" type="button" aria-label="Pausar a troca das fotos"><svg class="icone" aria-hidden="true"><use href="#i-pausa"/></svg></button>
                 <div class="galeria__pontos" role="group" aria-label="Escolher foto"></div>
             </div>
 
-            <ul class="dados">
-                <li>
-                    <svg class="icone" aria-hidden="true"><use href="#i-pin"/></svg>
-                    <div><strong>Endereço</strong><span><mark class="pend">[PENDENTE: endereço completo, bairro e CEP]</mark></span></div>
-                </li>
-                <li>
-                    <svg class="icone" aria-hidden="true"><use href="#i-relogio"/></svg>
-                    <div><strong>Horários</strong><span>Segunda a sexta, das 8h às 12h e das 14h às 17h <mark class="pend">[PENDENTE: confirmar se é o horário dela ou da clínica]</mark></span></div>
-                </li>
-            </ul>
-            <p class="pend-linha"><mark class="pend">[PENDENTE: acessibilidade e estacionamento]</mark></p>
-
-            <div class="chamada">
+            <div class="consultorio__info">
+                <ul class="dados">
+                    <li>
+                        <span class="dados__icone" aria-hidden="true"><svg class="icone"><use href="#i-pin"/></svg></span>
+                        <div><strong>Endereço</strong><span><mark class="pend">[PENDENTE: endereço completo, bairro e CEP]</mark></span></div>
+                    </li>
+                    <li>
+                        <span class="dados__icone" aria-hidden="true"><svg class="icone"><use href="#i-relogio"/></svg></span>
+                        <div><strong>Horários</strong><span>Segunda a sexta, das 8h às 12h e das 14h às 17h <mark class="pend">[PENDENTE: confirmar se é o horário dela ou da clínica]</mark></span></div>
+                    </li>
+                    <li>
+                        <span class="dados__icone" aria-hidden="true"><svg class="icone"><use href="#i-mapa"/></svg></span>
+                        <!-- O mapa interativo entra na prévia 2, junto com o aviso de cookies (só carrega depois do consentimento). -->
+                        <div><strong>Como chegar</strong><span><mark class="pend">[PENDENTE: link do Google Maps; o mapa entra na prévia 2]</mark></span></div>
+                    </li>
+                </ul>
+                <p class="pend-linha"><mark class="pend">[PENDENTE: acessibilidade e estacionamento]</mark></p>
                 <a class="btn btn--grande" href="https://wa.me/?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Nayane%20Moreno." data-wa data-wa-origin="consultorio">
                     <svg class="icone" aria-hidden="true"><use href="#i-whatsapp"/></svg>
                     Agendar avaliação pelo WhatsApp
                 </a>
+            </div>
             </div>
         </div>
     </section>
@@ -508,57 +533,59 @@
 
     <!-- 10 · PERGUNTAS FREQUENTES -->
     <section class="secao" id="duvidas" aria-labelledby="titulo-duvidas">
-        <div class="contem contem--estreito">
-            <header class="secao__cab">
+        <div class="contem duvidas">
+            <header class="secao__cab duvidas__cab">
                 <p class="rotulo">Tire suas dúvidas</p>
                 <h2 id="titulo-duvidas">Perguntas frequentes</h2>
             </header>
 
+            <div class="duvidas__lista">
             <div class="faq">
                 <div class="faq__item">
                     <h3><button class="faq__pergunta" type="button" aria-expanded="false" aria-controls="r1" id="p1">A partir de que idade a criança pode ser avaliada?<svg class="icone" aria-hidden="true"><use href="#i-mais"/></svg></button></h3>
-                    <div class="faq__resposta" id="r1" role="region" aria-labelledby="p1"><div><p>Na Odontologia Miofuncional, a Dra. Nayane atende em geral crianças de 5 a 10 anos <mark class="pend">[PENDENTE: faixa e idade mínima para avaliar]</mark>. A partir dos 11 anos, o caminho é a Ortodontia, para adolescentes e adultos. Seu filho tem menos de 5 anos? Chame pelo WhatsApp e o consultório orienta quando vale fazer a avaliação.</p></div></div>
+                    <div class="faq__resposta" id="r1"><div><p>Na Odontologia Miofuncional, a Dra. Nayane atende em geral crianças de 5 a 10 anos <mark class="pend">[PENDENTE: faixa e idade mínima para avaliar]</mark>. A partir dos 11 anos, o caminho é a Ortodontia, para adolescentes e adultos. Seu filho tem menos de 5 anos? Chame pelo WhatsApp e o consultório orienta quando vale fazer a avaliação.</p></div></div>
                 </div>
                 <div class="faq__item">
                     <h3><button class="faq__pergunta" type="button" aria-expanded="false" aria-controls="r2" id="p2">Isso não passa com a idade? Preciso esperar os dentes permanentes nascerem?<svg class="icone" aria-hidden="true"><use href="#i-mais"/></svg></button></h3>
-                    <div class="faq__resposta" id="r2" role="region" aria-labelledby="p2"><div><p><mark class="pend">[PENDENTE: validação clínica da Dra. Nayane, sem promessa]</mark> Alguns sinais mudam com o crescimento, outros não. A avaliação serve justamente para saber em qual caso a criança está. Para avaliar, não é preciso esperar os dentes permanentes: a partir dos 5 anos <mark class="pend">[PENDENTE: idade mínima]</mark>, a avaliação já olha como a criança respira, posiciona a língua e mastiga. Se há ou não indicação de tratamento, a Dra. Nayane explica depois da avaliação.</p></div></div>
+                    <div class="faq__resposta" id="r2"><div><p><mark class="pend">[PENDENTE: validação clínica da Dra. Nayane, sem promessa]</mark> Alguns sinais mudam com o crescimento, outros não. A avaliação serve justamente para saber em qual caso a criança está. Para avaliar, não é preciso esperar os dentes permanentes: a partir dos 5 anos <mark class="pend">[PENDENTE: idade mínima]</mark>, a avaliação já olha como a criança respira, posiciona a língua e mastiga. Se há ou não indicação de tratamento, a Dra. Nayane explica depois da avaliação.</p></div></div>
                 </div>
                 <div class="faq__item">
                     <h3><button class="faq__pergunta" type="button" aria-expanded="false" aria-controls="r3" id="p3">O que é Odontologia Miofuncional?<svg class="icone" aria-hidden="true"><use href="#i-mais"/></svg></button></h3>
-                    <div class="faq__resposta" id="r3" role="region" aria-labelledby="p3"><div><p>É uma abordagem da Odontologia que olha as funções da boca: como a pessoa respira, onde fica a língua, como mastiga e como funciona a musculatura da boca. Essas funções estão ligadas ao desenvolvimento dos dentes e do rosto. Quando há indicação de tratamento, um dos recursos é o sistema Myobrace, no qual a Dra. Nayane é credenciada. <mark class="pend">[PENDENTE: validação da Dra. Nayane]</mark></p></div></div>
+                    <div class="faq__resposta" id="r3"><div><p>É uma abordagem da Odontologia que olha as funções da boca: como a pessoa respira, onde fica a língua, como mastiga e como funciona a musculatura da boca. Essas funções estão ligadas ao desenvolvimento dos dentes e do rosto. Quando há indicação de tratamento, um dos recursos é o sistema Myobrace, no qual a Dra. Nayane é credenciada. <mark class="pend">[PENDENTE: validação da Dra. Nayane]</mark></p></div></div>
                 </div>
                 <div class="faq__item">
                     <h3><button class="faq__pergunta" type="button" aria-expanded="false" aria-controls="r4" id="p4">Meu filho ronca. Isso é com a dentista?<svg class="icone" aria-hidden="true"><use href="#i-mais"/></svg></button></h3>
-                    <div class="faq__resposta" id="r4" role="region" aria-labelledby="p4"><div><p>O ronco merece atenção, e o diagnóstico é médico. Na avaliação, a Dra. Nayane observa a respiração e o sono do ponto de vista da Odontologia e, quando necessário, orienta a avaliação com o otorrino. Ela trabalha em conjunto com otorrino, fonoaudiologia e fisioterapia respiratória.</p></div></div>
+                    <div class="faq__resposta" id="r4"><div><p>O ronco merece atenção, e o diagnóstico é médico. Na avaliação, a Dra. Nayane observa a respiração e o sono do ponto de vista da Odontologia e, quando necessário, orienta a avaliação com o otorrino. Ela trabalha em conjunto com otorrino, fonoaudiologia e fisioterapia respiratória.</p></div></div>
                 </div>
                 <div class="faq__item">
                     <h3><button class="faq__pergunta" type="button" aria-expanded="false" aria-controls="r5" id="p5">Meu filho tem medo de dentista. Como é a primeira consulta?<svg class="icone" aria-hidden="true"><use href="#i-mais"/></svg></button></h3>
-                    <div class="faq__resposta" id="r5" role="region" aria-labelledby="p5"><div><p>A Dra. Nayane tem uma forma lúdica de abordar a criança e explica para a família, com calma, o que observou. O acolhimento passa por prestar atenção no que a criança sinaliza e manter a escuta ativa. <mark class="pend">[PENDENTE: aprovação do texto e, se o espaço infantil ficar no consultório atual, acrescentar que ele tem escalada, basquete, lousa e outras brincadeiras]</mark></p></div></div>
+                    <div class="faq__resposta" id="r5"><div><p>A Dra. Nayane tem uma forma lúdica de abordar a criança e explica para a família, com calma, o que observou. O acolhimento passa por prestar atenção no que a criança sinaliza e manter a escuta ativa. <mark class="pend">[PENDENTE: aprovação do texto e, se o espaço infantil ficar no consultório atual, acrescentar que ele tem escalada, basquete, lousa e outras brincadeiras]</mark></p></div></div>
                 </div>
                 <div class="faq__item">
                     <h3><button class="faq__pergunta" type="button" aria-expanded="false" aria-controls="r6" id="p6">Adulto pode usar aparelho?<svg class="icone" aria-hidden="true"><use href="#i-mais"/></svg></button></h3>
-                    <div class="faq__resposta" id="r6" role="region" aria-labelledby="p6"><div><p>Sim. A Ortodontia atende a partir dos 11 anos, adolescentes e adultos. Em alguns casos, a Dra. Nayane combina o aparelho com o cuidado da respiração, da língua e da mastigação. A indicação depende da avaliação.</p></div></div>
+                    <div class="faq__resposta" id="r6"><div><p>Sim. A Ortodontia atende a partir dos 11 anos, adolescentes e adultos. Em alguns casos, a Dra. Nayane combina o aparelho com o cuidado da respiração, da língua e da mastigação. A indicação depende da avaliação.</p></div></div>
                 </div>
                 <div class="faq__item">
                     <h3><button class="faq__pergunta" type="button" aria-expanded="false" aria-controls="r7" id="p7">Atende pelo meu plano?<svg class="icone" aria-hidden="true"><use href="#i-mais"/></svg></button></h3>
-                    <div class="faq__resposta" id="r7" role="region" aria-labelledby="p7"><div><p>A Dra. Nayane atende particular e <mark class="pend">[PENDENTE: confirmar que atende por convênio hoje e quais planos]</mark>. A cobertura muda conforme o plano e o tratamento. Mande o nome do seu plano pelo WhatsApp e o consultório confere para o seu caso. <mark class="pend">[PENDENTE: confirmar que o consultório confere a cobertura pelo WhatsApp]</mark></p></div></div>
+                    <div class="faq__resposta" id="r7"><div><p>A Dra. Nayane atende particular e <mark class="pend">[PENDENTE: confirmar que atende por convênio hoje e quais planos]</mark>. A cobertura muda conforme o plano e o tratamento. Mande o nome do seu plano pelo WhatsApp e o consultório confere para o seu caso. <mark class="pend">[PENDENTE: confirmar que o consultório confere a cobertura pelo WhatsApp]</mark></p></div></div>
                 </div>
                 <div class="faq__item">
                     <h3><button class="faq__pergunta" type="button" aria-expanded="false" aria-controls="r8" id="p8">Quanto tempo dura o tratamento?<svg class="icone" aria-hidden="true"><use href="#i-mais"/></svg></button></h3>
-                    <div class="faq__resposta" id="r8" role="region" aria-labelledby="p8"><div><p>Depende do que a avaliação mostrar, e nem toda avaliação termina em tratamento. Cada planejamento é feito para o caso, e a duração é conversada depois da avaliação. <mark class="pend">[PENDENTE: validação da Dra. Nayane]</mark></p></div></div>
+                    <div class="faq__resposta" id="r8"><div><p>Depende do que a avaliação mostrar, e nem toda avaliação termina em tratamento. Cada planejamento é feito para o caso, e a duração é conversada depois da avaliação. <mark class="pend">[PENDENTE: validação da Dra. Nayane]</mark></p></div></div>
                 </div>
                 <div class="faq__item">
                     <h3><button class="faq__pergunta" type="button" aria-expanded="false" aria-controls="r9" id="p9">Quanto custa?<svg class="icone" aria-hidden="true"><use href="#i-mais"/></svg></button></h3>
-                    <div class="faq__resposta" id="r9" role="region" aria-labelledby="p9"><div><p>O valor da avaliação e, se houver indicação, o do tratamento são passados pelo WhatsApp, junto com o que o seu plano cobre, se você tiver plano. Você recebe as informações antes de marcar e decide com calma. <mark class="pend">[PENDENTE: confirmar com a Dra. Nayane]</mark></p><p><a class="link-wa" href="https://wa.me/?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Nayane%20Moreno." data-wa data-wa-origin="faq">Perguntar o valor pelo WhatsApp</a></p></div></div>
+                    <div class="faq__resposta" id="r9"><div><p>O valor da avaliação e, se houver indicação, o do tratamento são passados pelo WhatsApp, junto com o que o seu plano cobre, se você tiver plano. Você recebe as informações antes de marcar e decide com calma. <mark class="pend">[PENDENTE: confirmar com a Dra. Nayane]</mark></p><p><a class="link-wa" href="https://wa.me/?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Nayane%20Moreno." data-wa data-wa-origin="faq">Perguntar o valor pelo WhatsApp</a></p></div></div>
                 </div>
                 <div class="faq__item">
                     <h3><button class="faq__pergunta" type="button" aria-expanded="false" aria-controls="r10" id="p10">Como agendar?<svg class="icone" aria-hidden="true"><use href="#i-mais"/></svg></button></h3>
-                    <div class="faq__resposta" id="r10" role="region" aria-labelledby="p10"><div><p>Toque em “Agendar avaliação pelo WhatsApp”. A conversa abre no WhatsApp com a mensagem pronta, e o consultório tira suas dúvidas e marca o horário.</p></div></div>
+                    <div class="faq__resposta" id="r10"><div><p>Toque em “Agendar avaliação pelo WhatsApp”. A conversa abre no WhatsApp com a mensagem pronta, e o consultório tira suas dúvidas e marca o horário.</p></div></div>
                 </div>
             </div>
             <p class="pend-linha"><mark class="pend">[PENDENTE: perguntas reais que chegam no WhatsApp; hoje esta lista é hipótese]</mark></p>
+            </div>
 
-            <div class="chamada">
+            <div class="chamada duvidas__chamada">
                 <p class="chamada__frase">Ficou alguma dúvida?</p>
                 <a class="btn btn--grande" href="https://wa.me/?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Nayane%20Moreno." data-wa data-wa-origin="faq">
                     <svg class="icone" aria-hidden="true"><use href="#i-whatsapp"/></svg>
@@ -570,7 +597,8 @@
 
     <!-- 11 · CHAMADA FINAL (mínima; a cliente decide se fica) -->
     <section class="final" id="agendar" aria-labelledby="titulo-final">
-        <div class="contem final__grade">
+        <div class="contem">
+        <div class="final__grade">
             <div>
                 <p class="rotulo rotulo--claro">Seu próximo passo</p>
                 <h2 id="titulo-final">Comece pela avaliação</h2>
@@ -585,6 +613,7 @@
                 <p class="pend-linha"><mark class="pend">[PENDENTE: horário em que o WhatsApp responde]</mark></p>
             </div>
         </div>
+        </div>
     </section>
 </main>
 
@@ -592,7 +621,7 @@
 <footer class="rodape">
     <div class="contem rodape__grade">
         <div class="rodape__marca">
-            <p class="rodape__nome">Dra. Nayane Moreno</p>
+            <p class="rodape__nome"><span class="marca__selo marca__selo--claro" aria-hidden="true"><svg class="icone"><use href="#i-dente"/></svg></span>Dra. Nayane Moreno</p>
             <p class="rodape__reg">Cirurgiã-Dentista · CRO-SE 2301</p>
             <p>Ortodontia além dos dentes. Odontologia Miofuncional para crianças de 5 a 10 anos, Ortodontia a partir de 11 anos e Clínica geral, em Aracaju – SE.</p>
         </div>
@@ -629,6 +658,6 @@
     <svg class="icone" aria-hidden="true"><use href="#i-whatsapp"/></svg>
 </a>
 
-<script src="script.js?v=20261027-01" defer></script>
+<script src="script.js?v=20261027-02" defer></script>
 </body>
 </html>
