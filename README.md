@@ -150,7 +150,7 @@ A lista completa também aparece na própria página, em amarelo.
 **Para a agência**
 - [ ] Perfil do Google, Facebook e diretórios atualizados com o endereço e os convênios atuais, junto com o lançamento
 - [ ] Combinar com o gestor de tráfego a lista de permissão das tags e os códigos `?t=` dos topos por campanha
-- [ ] Nas fotos do consultório há um cartaz de parede ("Dia das Crianças") cujo texto não deu para ler: conferir que não traz preço, desconto ou condição comercial antes de publicar
+- [ ] Nas fotos do site, os nomes escritos na lousa, os cartazes de "Dia das Crianças" e um calendário de mesa foram desfocados. Nas fotos novas, pedir os ambientes sem esses itens e confirmar que a pessoa do pôster rosa acima da lousa é a própria Dra. Nayane
 - [ ] As fotos do site foram reduzidas para até 1280 px (a cópia na pasta do Drive é ainda menor): pedir as originais em boa resolução para o lançamento
 
 ---
