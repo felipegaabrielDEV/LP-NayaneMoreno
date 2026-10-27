@@ -137,13 +137,13 @@ A lista completa também aparece na própria página, em amarelo.
 - [ ] Tipos de aparelho e alinhadores; ortopedia funcional é serviço próprio?
 - [ ] Clínica geral: procedimentos, idades, odontopediatria
 - [ ] Citações "Eu enxergo além dos dentes" e "Eu avalio e somente indico tratamento…" e o parágrafo da trajetória no Sobre
-- [ ] Se pode citar que a primeira consulta inclui limpeza e aplicação de flúor (condição comercial)
+- [ ] O que pode ser dito sobre a primeira consulta, dentro da norma
 - [ ] Se o espaço infantil (escalada, basquete, lousa, boliche) fica no consultório atual
 - [ ] Logotipo em boa resolução e aprovação da paleta
 
 **Dependem do material dela**
 - [ ] Casos e vídeos de depoimento citados por ela: **autorização por escrito** (dos responsáveis, no caso das crianças) e norma conferida. Nomes de pacientes nunca entram no site nem no repositório
-- [ ] Avaliações do Google: link e nota conferidos no próprio Google (os 4,90 e 156 vêm de um site de terceiros)
+- [ ] Avaliações do Google: link e nota conferidos no próprio Google, não em sites de terceiros
 - [ ] Acessibilidade e estacionamento do consultório
 - [ ] Perguntas reais que chegam no WhatsApp, para substituir a lista hipotética das perguntas frequentes
 
