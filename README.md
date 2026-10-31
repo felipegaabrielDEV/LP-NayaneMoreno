@@ -51,12 +51,11 @@ Ainda **não** tem (entram na prévia 2): formulário antes do WhatsApp, eventos
 
 ## 🎨 Identidade visual (proposta)
 
-Sem logotipo nem manual de marca, a paleta saiu das fotos do consultório: verde-menta das paredes, azul-claro da bancada, rosa dos detalhes. Tudo está nos tokens do `:root` do [`styles.css`](styles.css). **Precisa de aprovação da cliente.**
+Segue a recomendação da agência (30/10/2026): **estrutura do Modelo 2** (limpa e objetiva, título grande sem serifa, foto retangular e faixa de números logo abaixo do topo) **com as cores do Modelo 4** (verde-água suave, branco e botões amarelos). Tudo está nos tokens do `:root` do [`styles.css`](styles.css). **Precisa da escolha final da cliente.**
 
-- **Cores:** verde-profundo `#0b3f3c` (títulos e seções escuras), menta `#e3f4f1`, creme `#fbf8f3` e coral `#c4452d` só no botão de ação (contraste 4,96 com texto branco).
-- **Fontes:** Fraunces (títulos) e Nunito Sans (texto), pelo Google Fonts.
+- **Cores:** verde-profundo `#0b3f3c` (títulos e seções escuras), verde-água `#a9d9d3` e `#eaf6f4` (blocos de fundo) e amarelo `#ffc72c` nos botões de ação, com texto escuro.
+- **Fonte:** Plus Jakarta Sans (títulos e texto), pelo Google Fonts.
 - **Ícones:** SVG em traço, no sprite do início do `index.html`.
-- **Composição:** foto em arco no topo, com os temas da avaliação (respiração, língua, mastigação, sono e postura) em volta; cartões com cantos arredondados e sombra suave; seções alternando creme, menta e verde-profundo. A foto entra no lugar do conteúdo do `.arco`, e o CSS já recorta no formato.
 
 ---
 
