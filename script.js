@@ -26,7 +26,8 @@
         servico_ortodontia: "Olá! Vim pelo site e quero agendar uma avaliação de Ortodontia com a Dra. Nayane Moreno.",
         servico_clinico: "Olá! Vim pelo site e quero agendar uma consulta de clínica geral com a Dra. Nayane Moreno.",
         convenios: "Olá! Vim pelo site e quero confirmar se a Dra. Nayane Moreno atende pelo meu plano.",
-        faq: "Olá! Vim pelo site da Dra. Nayane Moreno e tenho uma dúvida."
+        faq: "Olá! Vim pelo site da Dra. Nayane Moreno e tenho uma dúvida.",
+        hero: "Olá! Vim pelo site e quero agendar uma avaliação de ortodontia com a Dra. Nayane Moreno."
     };
 
     function linkWhatsApp(origem) {

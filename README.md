@@ -1,5 +1,7 @@
 # 🦷 Dra. Nayane Moreno — Site | Dentista em Aracaju
 
+> 🎯 **Foco em Ortodontia (30/10/2026):** a página foi reorganizada em Início, Ortodontia, Miofuncional, Clínica geral, Convênios, Sobre, Consultório e Dúvidas, com a Ortodontia em destaque. A escolha do estilo visual ainda será validada com a Dra. Nayane.
+
 > 🚧 **Prévia 1 (~50%).** Estrutura completa, identidade visual proposta e textos da primeira versão. Onde falta informação da cliente, a própria página mostra um marcador amarelo `[PENDENTE: …]`. Site com `noindex`: não aparece no Google até a aprovação final.
 
 Site para a **Dra. Nayane Moreno**, cirurgiã-dentista em Aracaju/SE (CRO-SE 2301), com atuação em **Odontologia Miofuncional**, **Ortodontia** e **Clínica geral**. O objetivo é apresentar o jeito de trabalhar dela, que avalia a causa dos problemas (respiração, língua, mastigação, sono e postura) e não só a posição dos dentes, e levar pais e pacientes a uma conversa qualificada no WhatsApp para agendar a avaliação.

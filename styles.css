@@ -674,6 +674,7 @@ h1 em { display: block; margin-top: .1em; font-style: italic; font-weight: 500; 
     .servico:hover { transform: translateY(-6px); box-shadow: var(--sombra-g); }
 }
 @media (min-width: 960px) { .servicos { grid-template-columns: repeat(3, 1fr); align-items: stretch; gap: 1.5rem; } .servico { padding: 2.25rem 1.75rem 1.75rem; } }
+@media (min-width: 760px) { .servicos.servicos--dois { grid-template-columns: 1fr 1fr; } }
 
 /* ---------- 05 · Convênios ---------- */
 .convenios { padding-block: 0 var(--secao); }

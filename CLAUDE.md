@@ -10,6 +10,8 @@ Não comece pelo código. A ordem é: **entender → decidir → escrever → co
 
 - **Cliente:** Dra. Nayane Moreno, cirurgiã-dentista em Aracaju/SE, CRO-SE 2301.
 - **Divisão pedida por ela:** Odontologia Miofuncional (crianças de 5 a 10 anos) · Ortodontia (a partir de 11 anos, adolescentes e adultos) · Clínica geral.
+- **Foco do site (decisão da agência, 30/10/2026):** este site é de **Ortodontia**. Posicionamento principal: "Dra. Nayane Moreno — Ortodontia em Aracaju". A Ortodontia aparece primeiro e com mais destaque no menu e na página; crianças, adolescentes e adultos continuam; a Odontologia Miofuncional é área complementar (principalmente crianças) e a Clínica geral fica em segundo plano. Myobrace é um recurso, nunca o protagonista. A mentoria para dentistas não entra. Informação que não ajuda a Ortodontia fica em segundo plano ou fora (o que ajuda, como os 15 anos de atuação, fica). Antes e depois só depois de conferir as autorizações escritas e a norma.
+- **Visual (recomendação da agência, a validar com a cliente):** estrutura moderna e objetiva do "Modelo 2" com as cores suaves e o acolhimento do "Modelo 4" da apresentação de modelos.
 - **Ideia central de trabalho:** "Ortodontia além dos dentes": ela avalia e trata a causa (respiração, língua, mastigação, sono, postura), não só a posição dos dentes. Ela pediu **"protocolo"** no lugar de "método".
 - **Conversão:** conversa qualificada no WhatsApp que vira agendamento de avaliação.
 - **Tráfego que vai chegar:** anúncios do Meta e do Google (campanhas separadas por serviço; os detalhes estão nos documentos), bio do Instagram e perfil do Google.
